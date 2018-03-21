@@ -10,7 +10,7 @@ script:
   # Test that the framework can be installed and built, and passes all unit tests
   - travis_wait pod update
   - pod lib lint --allow-warnings
-  - xcodebuild -scheme "BluemixAppID" -destination "OS=9.3,name=iPhone 7" test | xcpretty
+  - xcodebuild -scheme "BluemixAppID" -destination "OS=9.3,name=iPhone 7" test
   - slather coverage --coveralls --binary-basename BluemixAppID.framework -v
   # When merging or pushing to the master branch, release a new version and publish the API documentation
   #- if [ "${TRAVIS_PULL_REQUEST}" = "false" ] && [ "${TRAVIS_BRANCH}" = "master" ] ; then
