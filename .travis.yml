@@ -1,4 +1,3 @@
-language: objective-c
 matrix:
   include:
     - osx_image: xcode8.3
@@ -7,16 +6,11 @@ install:
   - gem install slather
 before_script:
   - rm -rf ~/Library/Developer/Xcode/DerivedData
-before_install:
-    - export IOS_SIMULATOR_UDID=`instruments -s devices | grep "iPhone 6 (9.3" | awk -F '[ ]' '{print $4}' | awk -F '[\[]' '{print $2}' | sed 's/.$//'`
-    - echo $IOS_SIMULATOR_UDID
-    - open -a "simulator" --args -CurrentDeviceUDID $IOS_SIMULATOR_UDID
 script:
   # Test that the framework can be installed and built, and passes all unit tests
   - travis_wait pod update
   - pod lib lint --allow-warnings
-  - xcodebuild -workspace 'BluemixAppID.xcworkspace' -scheme 'BluemixAppID' clean build CODE_SIGN_IDENTITY= CODE_SIGNING_REQUIRED=NO
-  - travis_retry xcodebuild -workspace 'BluemixAppID.xcworkspace' test -scheme 'BluemixAppIDTests' -destination 'platform=iOS Simulator,name=iPhone 6' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -enableCodeCoverage YES
+  - xcodebuild -scheme "BluemixAppID" -destination "OS=9.3,name=iPhone 7" test | xcpretty
   - slather coverage --coveralls --binary-basename BluemixAppID.framework -v
   # When merging or pushing to the master branch, release a new version and publish the API documentation
   #- if [ "${TRAVIS_PULL_REQUEST}" = "false" ] && [ "${TRAVIS_BRANCH}" = "master" ] ; then
