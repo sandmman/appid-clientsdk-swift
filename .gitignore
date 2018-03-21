@@ -1,6 +1,9 @@
-BluemixAppID.xcodeproj/
-BluemixAppID.xcworkspace/
 Pods/
 Podfile.lock
 .idea/
 *.DS_Store
+
+# Build generated
+build/
+DerivedData/
+xcuserdata/

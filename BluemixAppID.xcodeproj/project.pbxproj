@@ -15,11 +15,6 @@
 		BDC0D53F1E5EF68300444F9E /* UserAttributeManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC0D53E1E5EF68300444F9E /* UserAttributeManagerImpl.swift */; };
 		BDF5878B1E65736B00393C0C /* (null) in Sources */ = {isa = PBXBuildFile; };
 		BDF5878F1E66C55A00393C0C /* UserAttributeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDF5878E1E66C55A00393C0C /* UserAttributeTests.swift */; };
-		EF3B3BE21E55C4E900DFFF13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3B3BE11E55C4E900DFFF13 /* AppDelegate.swift */; };
-		EF3B3BE41E55C4E900DFFF13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3B3BE31E55C4E900DFFF13 /* ViewController.swift */; };
-		EF3B3BE71E55C4E900DFFF13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3B3BE51E55C4E900DFFF13 /* Main.storyboard */; };
-		EF3B3BE91E55C4E900DFFF13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF3B3BE81E55C4E900DFFF13 /* Assets.xcassets */; };
-		EF3B3BEC1E55C4E900DFFF13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF3B3BEA1E55C4E900DFFF13 /* LaunchScreen.storyboard */; };
 		EF4994801E55F7BE008ACC27 /* AppIDAuthorizationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBA1FE71E51F7D9000EB3F5 /* AppIDAuthorizationManagerTests.swift */; };
 		EF4994811E55F7BE008ACC27 /* SecurityUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBA1FE81E51F7D9000EB3F5 /* SecurityUtilsTests.swift */; };
 		EF4994821E55F7BE008ACC27 /* AppIDTestConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBA1FE91E51F7D9000EB3F5 /* AppIDTestConstants.swift */; };
@@ -80,13 +75,6 @@
 			remoteGlobalIDString = EFBBC7531DF99AFA000CE39A;
 			remoteInfo = AppID;
 		};
-		EFFD59351E55C50F00B47FCB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EFBBC74B1DF99AFA000CE39A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EF3B3BDE1E55C4E900DFFF13;
-			remoteInfo = dummyAppForKeyChain;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -101,7 +89,6 @@
 		D7C1B0698BAAA534E21A1C51 /* Pods-BluemixAppID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BluemixAppID.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BluemixAppID/Pods-BluemixAppID.debug.xcconfig"; sourceTree = "<group>"; };
 		EF37F8B91E534C2D0020E998 /* AuthorizationUIManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizationUIManagerTests.swift; sourceTree = "<group>"; };
 		EF37F8BB1E5487C40020E998 /* TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
-		EF3B3BDF1E55C4E900DFFF13 /* dummyAppForKeyChain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dummyAppForKeyChain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF3B3BE11E55C4E900DFFF13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF3B3BE31E55C4E900DFFF13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EF3B3BE61E55C4E900DFFF13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -163,13 +150,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EF3B3BDC1E55C4E900DFFF13 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EFBBC7501DF99AFA000CE39A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,7 +328,6 @@
 			children = (
 				EFBBC7541DF99AFA000CE39A /* BluemixAppID.framework */,
 				EFBBC7661DF99BF6000CE39A /* BluemixAppIDTests.xctest */,
-				EF3B3BDF1E55C4E900DFFF13 /* dummyAppForKeyChain.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -377,23 +356,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		EF3B3BDE1E55C4E900DFFF13 /* dummyAppForKeyChain */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EF3B3BEE1E55C4E900DFFF13 /* Build configuration list for PBXNativeTarget "dummyAppForKeyChain" */;
-			buildPhases = (
-				EF3B3BDB1E55C4E900DFFF13 /* Sources */,
-				EF3B3BDC1E55C4E900DFFF13 /* Frameworks */,
-				EF3B3BDD1E55C4E900DFFF13 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = dummyAppForKeyChain;
-			productName = dummyAppForKeyChain;
-			productReference = EF3B3BDF1E55C4E900DFFF13 /* dummyAppForKeyChain.app */;
-			productType = "com.apple.product-type.application";
-		};
 		EFBBC7531DF99AFA000CE39A /* BluemixAppID */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFBBC75C1DF99AFA000CE39A /* Build configuration list for PBXNativeTarget "BluemixAppID" */;
@@ -429,7 +391,6 @@
 			);
 			dependencies = (
 				EFBBC76D1DF99BF6000CE39A /* PBXTargetDependency */,
-				EFFD59361E55C50F00B47FCB /* PBXTargetDependency */,
 			);
 			name = BluemixAppIDTests;
 			productName = AppIDTests;
@@ -446,16 +407,6 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Oded Betzalel";
 				TargetAttributes = {
-					EF3B3BDE1E55C4E900DFFF13 = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = TN6YQNGLXP;
-						ProvisioningStyle = Automatic;
-						SystemCapabilities = {
-							com.apple.Keychain = {
-								enabled = 1;
-							};
-						};
-					};
 					EFBBC7531DF99AFA000CE39A = {
 						CreatedOnToolsVersion = 8.1;
 						LastSwiftMigration = 0810;
@@ -483,22 +434,11 @@
 			targets = (
 				EFBBC7531DF99AFA000CE39A /* BluemixAppID */,
 				EFBBC7651DF99BF6000CE39A /* BluemixAppIDTests */,
-				EF3B3BDE1E55C4E900DFFF13 /* dummyAppForKeyChain */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EF3B3BDD1E55C4E900DFFF13 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EF3B3BEC1E55C4E900DFFF13 /* LaunchScreen.storyboard in Resources */,
-				EF3B3BE91E55C4E900DFFF13 /* Assets.xcassets in Resources */,
-				EF3B3BE71E55C4E900DFFF13 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EFBBC7521DF99AFA000CE39A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -595,15 +535,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EF3B3BDB1E55C4E900DFFF13 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EF3B3BE41E55C4E900DFFF13 /* ViewController.swift in Sources */,
-				EF3B3BE21E55C4E900DFFF13 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EFBBC74F1DF99AFA000CE39A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -678,11 +609,6 @@
 			target = EFBBC7531DF99AFA000CE39A /* BluemixAppID */;
 			targetProxy = EFBBC76C1DF99BF6000CE39A /* PBXContainerItemProxy */;
 		};
-		EFFD59361E55C50F00B47FCB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EF3B3BDE1E55C4E900DFFF13 /* dummyAppForKeyChain */;
-			targetProxy = EFFD59351E55C50F00B47FCB /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -705,36 +631,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		EF3B3BEF1E55C4E900DFFF13 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = dummyAppForKeyChain/dummyAppForKeyChain.entitlements;
-				DEVELOPMENT_TEAM = TN6YQNGLXP;
-				INFOPLIST_FILE = dummyAppForKeyChain/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = oded.dummyAppForKeyChain;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		EF3B3BF01E55C4E900DFFF13 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = dummyAppForKeyChain/dummyAppForKeyChain.entitlements;
-				DEVELOPMENT_TEAM = TN6YQNGLXP;
-				INFOPLIST_FILE = dummyAppForKeyChain/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = oded.dummyAppForKeyChain;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
 		EFBBC75A1DF99AFA000CE39A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -920,15 +816,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EF3B3BEE1E55C4E900DFFF13 /* Build configuration list for PBXNativeTarget "dummyAppForKeyChain" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EF3B3BEF1E55C4E900DFFF13 /* Debug */,
-				EF3B3BF01E55C4E900DFFF13 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		EFBBC74E1DF99AFA000CE39A /* Build configuration list for PBXProject "BluemixAppID" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
